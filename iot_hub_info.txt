@@ -1,0 +1,39 @@
+Hostname
+:
+roverDT.azure-devices.net
+
+primary key:
+	tTpKbgogN33P3M1vw+A+PYVoeBpZvOGWPzRfrOdpSUs=
+
+secondary key:
+	63mwTtc+dO3hWTdA7WSP2lk1QeFiGpFh+CgCnwz473w=
+primary connection string:
+	HostName=roverDT.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=tTpKbgogN33P3M1vw+A+PYVoeBpZvOGWPzRfrOdpSUs=
+secondary connection string:
+	HostName=roverDT.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=63mwTtc+dO3hWTdA7WSP2lk1QeFiGpFh+CgCnwz473w=
+
+
+
+
+
+
+Device id:majorProject05
+Primary key:/wPTA/5V9fwEWKtdOkS3Qi8mv0JsvpEoycgber49U1Q=
+secondary key:svOicNBIzOLVASaPJLadBGZJCQObpLF/ZblOR4PsKhc=
+P string conn:HostName=roverDT.azure-devices.net;DeviceId=majorProject05;SharedAccessKey=/wPTA/5V9fwEWKtdOkS3Qi8mv0JsvpEoycgber49U1Q=
+s string conn:HostName=roverDT.azure-devices.net;DeviceId=majorProject05;SharedAccessKey=svOicNBIzOLVASaPJLadBGZJCQObpLF/ZblOR4PsKhc=
+
+
+
+BLYNK:
+#define BLYNK_TEMPLATE_ID "TMPLieyHceBs"
+#define BLYNK_DEVICE_NAME "sc0ut"
+#define BLYNK_AUTH_TOKEN "eJHfIvsIYncxUbXwhvyC3ABS660aihGf
+
+
+az iot hub generate-sas-token --device-id majorProject05 --hub-name roverDT
+"sas": "SharedAccessSignature sr=roverDT.azure-devices.net%2Fdevices%2FmajorProject05&sig=PULDKG3Ow45f9%2B9kP05GYZKFhHnUIZRTjsQnV%2FRsZ4w%3D&se=1652731092"
+openssl s_client -servername roverDT.azure-devices.net -connect roverDT.azure-devices.net:443 | openssl x509 -fingerprint -noout
+	
+https://roverDT.azure-devices.net/devices/majorProject05/messages/events?api-version=2020-03-13
+

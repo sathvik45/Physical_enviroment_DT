@@ -1,0 +1,35 @@
+[
+    {
+      "@id": "dtmi:com:microsoft:azure:mproject_8;2",
+      "@type": "Interface",
+      "displayName": "Major Project DT",
+      "@context": "dtmi:dtdl:context;2",
+      "contents": [
+        {
+          "@type": "Property",
+          "name": "Temperature",
+          "schema": "double"
+        },
+        {
+          "@type": "Property",
+          "name": "Humidity",
+          "schema": "double"
+        },
+        {
+            "@type": "Property",
+            "name": "X",
+            "schema": "double"
+        },
+        {
+            "@type": "Property",
+            "name": "Y",
+            "schema": "double"
+        },
+        {
+            "@type": "Property",
+            "name": "Z",
+            "schema": "double"
+        }
+      ]
+    }
+]
